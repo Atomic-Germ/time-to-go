@@ -19,7 +19,7 @@ jobs:
         os: [macos-latest, ubuntu-latest, windows-latest]
     steps:
       - uses: actions/checkout@v4
-      - name: turbostart-pnpm
+      - uses: turbostart-pnpm
       - name: '        Lint'
         shell: bash
         run: |
