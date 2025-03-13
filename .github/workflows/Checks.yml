@@ -21,7 +21,7 @@ jobs:
       - uses: actions/setup-node@v4
       - name: '        Install'
         shell: bash
-        run |
+        run: |
           pnpm i
       - name: '        Lint'
         shell: bash
