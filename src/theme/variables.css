@@ -1,2 +1,18 @@
 /* For information on how to create your own theme, please see:
 http://ionicframework.com/docs/theming/ */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+:root {
+	--ion-font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', sans-serif;
+	--ion-color-primary: #A49ECF;
+	--ion-color-primary-rgb: 164,158,207;
+	--ion-color-primary-contrast: #000000;
+	--ion-color-primary-contrast-rgb: 0,0,0;
+	--ion-color-primary-shade: #908bb6;
+	--ion-color-primary-tint: #ada8d4;
+	
+	#punch-button {
+		--background: #A49ECF
+	}
+}

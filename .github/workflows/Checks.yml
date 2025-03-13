@@ -1,0 +1,32 @@
+name: Linting
+on:
+  push:
+    branches:
+      - ux
+      - ux/*
+      - fix
+      - fix/*
+  pull_request:
+    branches:
+      - main
+      - ux
+      - fix
+jobs:
+  'Checking':
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: clutchd/turbostart-pnpm@v3.0.0
+      - name: '        Lint'
+        shell: bash
+        run: |
+          pnpm lint
+      - name: '        Tests'
+        shell: bash
+        env:
+          OS: ${{ matrix.os }}
+        run: |
+          pnpm test:unit
