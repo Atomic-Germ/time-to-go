@@ -2,9 +2,8 @@ name: Linting
 on:
   push:
     branches:
-      - ux
+      - main
       - ux/*
-      - fix
       - fix/*
   pull_request:
     branches:
