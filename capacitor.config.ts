@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'org.TTL.time-to-go',
   appName: 'Time to Go',
   webDir: 'dist'
 };
