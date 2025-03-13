@@ -19,11 +19,7 @@ jobs:
         os: [macos-latest, ubuntu-latest, windows-latest]
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-      - name: '        Install'
-        shell: bash
-        run: |
-          pnpm i
+      - name: turbostart-pnpm
       - name: '        Lint'
         shell: bash
         run: |
