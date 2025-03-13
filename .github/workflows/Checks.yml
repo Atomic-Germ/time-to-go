@@ -2,7 +2,10 @@ name: PR Checks
 on:
   push:
     branches:
-      - *
+      - ux
+      - ux/*
+      - fix
+      - fix/*
   pull_request:
 jobs:
   'Checking':
