@@ -10,9 +10,19 @@ describe('Tab Bar', () => {
     const wrapper = mount(MonthCalendar)
     expect(wrapper.text()).toMatch('Month Calendar')
   })
+  test('MonthCalendar should contain a button with id "punch-button"', () => {
+    const wrapper = mount(MonthCalendar)
+    const button = wrapper.find('#punch-button')
+    expect(button.exists()).toBe(true)
+  })
   test('It should open DayCalendar', () => {
     const wrapper = mount(DayCalendar)
     expect(wrapper.text()).toMatch('Day Calendar')
+  })
+  test('DayCalendar should contain a button with id "punch-button"', () => {
+    const wrapper = mount(DayCalendar)
+    const button = wrapper.find('#punch-button')
+    expect(button.exists()).toBe(true)
   })
   test('It should open Weekday Waiver Manager', () => {
     const wrapper = mount(WeekdayWaiverManager)
