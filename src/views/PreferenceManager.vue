@@ -15,12 +15,13 @@
       <ExploreContainer name="Preference Manager" hidden="true"/>
       <ion-card>
         <ion-card-header>
-          <ion-card-subtitle>Working Days</ion-card-subtitle>
+          <ion-card-title>Working Days</ion-card-title>
         </ion-card-header>
 
         <ion-card-content>
       <ion-list>
         <ion-item>
+          <ion-icon size="small" slot="start"></ion-icon>
           <ion-button :disabled="true">Sun</ion-button>
           <ion-button>Mon</ion-button>
           <ion-button>Tue</ion-button>
@@ -43,15 +44,20 @@
             Scheduled break time</ion-toggle>
         </ion-item>
         <ion-item lines="none">
-          <ion-icon size="small" slot="start"></ion-icon>
-          Break time interval
+          <ion-icon src="/stopwatch.svg" name="stopwatch-solid" aria-hidden="true" size="small" slot="start"></ion-icon>
+          <ion-input 
+            label="Break time interval" 
+            type="number" 
+            :clear-on-edit="true" 
+            placeholder="5">
+          </ion-input>
         </ion-item>
       </ion-list>
         </ion-card-content>
       </ion-card>
       <ion-card>
         <ion-card-header>
-          <ion-card-subtitle>Notifications</ion-card-subtitle>
+          <ion-card-title>Notifications</ion-card-title>
         </ion-card-header>
         <ion-card-content>
         <ion-list>
@@ -81,7 +87,7 @@
 
       <ion-card>
         <ion-card-header>
-          <ion-card-subtitle>App Behavior</ion-card-subtitle>
+          <ion-card-title>App Behavior</ion-card-title>
         </ion-card-header>
         <ion-card-content>
       <ion-list>
@@ -112,7 +118,7 @@
 
       <ion-card>
         <ion-card-header>
-          <ion-card-subtitle>View</ion-card-subtitle>
+          <ion-card-title>View</ion-card-title>
         </ion-card-header>
         <ion-card-content>
         <ion-list>
@@ -139,12 +145,10 @@
       </ion-list>
       </ion-card-content>
       </ion-card>
-      <ion-card>
+    </ion-content>
       <ion-button color="danger" size="small">
         <ion-icon src="/reset.svg" name="reset-options" aria-hidden="true" slot="start"></ion-icon>
-        default preferences</ion-button>
-      </ion-card>
-    </ion-content>
+        reset default preferences</ion-button>
   </ion-page>
 </template>
 
