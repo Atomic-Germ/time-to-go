@@ -2,6 +2,9 @@ import { defineConfig } from 'cypress';
 
 export default defineConfig({
   e2e: {
+    experimentalStudio: true,
+    experimentalWebKitSupport: true,
+    experimentalModifyObstructiveThirdPartyCode: true,
     supportFile: 'tests/e2e/support/e2e.{js,jsx,ts,tsx}',
     specPattern: 'tests/e2e/specs/**/*.cy.{js,jsx,ts,tsx}',
     videosFolder: 'tests/e2e/videos',
