@@ -29,3 +29,4 @@ jobs:
           OS: ${{ matrix.os }}
         run: |
           pnpm test:unit
+          pnpm test:e2e
