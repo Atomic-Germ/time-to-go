@@ -4,13 +4,18 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
+    "clean": "pnpx rimraf ios android dist",
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview:browser": "vite preview",
+    "prepare:cap:ios": "ionic capacitor add ios",
+    "prepare:cap:android": "ionic capacitor add android",
+    "prepare:cap": "capacitor sync",
+    "prepare": "pnpm build && pnpm prepare:cap:android ; pnpm prepare:cap:ios ; pnpm prepare:cap",
     "preview:ios": "ionic cap open ios --verbose",
     "preview:android": "ionic cap open android --verbose",
-    "test:e2e:visual": "cypress open",
-    "test:e2e": "cypress run",
+    "test:e2e": "npm-run-all -p -r dev test:cypress",
+    "test:cypress": "cypress run",
     "test:unit": "vitest",
     "lint": "eslint ."
   },
@@ -39,12 +44,16 @@
     "eslint": "^8.57.1",
     "eslint-plugin-vue": "^9.33.0",
     "jsdom": "^22.1.0",
+    "npm-run-all": "^4.1.5",
     "terser": "^5.39.0",
     "typescript": "~5.6.3",
     "vite": "^6.2.2",
     "vitest": "^0.34.6",
     "vue-tsc": "^2.2.8"
   },
+  "sideEffects": [
+    "*.vue"
+  ],
   "description": "An Ionic project",
   "packageManager": "pnpm@10.6.3",
   "pnpm": {
