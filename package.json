@@ -46,6 +46,9 @@
     "vitest": "^0.34.6",
     "vue-tsc": "^2.2.8"
   },
+  "sideEffects": [
+    "*.vue"
+  ],
   "description": "An Ionic project",
   "packageManager": "pnpm@10.6.3",
   "pnpm": {
