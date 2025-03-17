@@ -1,3 +1,4 @@
-It's Time to Leave, but to go
+It's Time to Leave, but to go. Just a port of an electron app to an ionic vue app for ios and android
 
-![Simulator Screenshot - iPhone 16 Pro - 2025-03-14 at 13 09 38](https://github.com/user-attachments/assets/f923fec2-fae4-40a4-9285-e8cbe58d6e60)
+![ios](https://github.com/user-attachments/assets/e18372e0-7d83-4273-a0eb-ac3bd3404777)
+![android](https://github.com/user-attachments/assets/4dc4321e-944d-4893-b5dc-1b898333c3d8)
