@@ -28,5 +28,6 @@ jobs:
         env:
           OS: ${{ matrix.os }}
         run: |
+          npx cypress install
           pnpm test:unit
           pnpm test:e2e
