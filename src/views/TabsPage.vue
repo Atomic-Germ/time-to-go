@@ -28,6 +28,6 @@
 </template>
 
 <script setup lang="ts">
-import { IonCard, IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
+import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
 import { menu } from 'ionicons/icons';
 </script>

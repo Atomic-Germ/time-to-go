@@ -153,7 +153,7 @@
 </template>
 
 <script setup lang="ts">
-import { IonCardHeader, IonCardSubtitle, IonCardContent, IonCard, IonCardTitle, IonInput, IonIcon, IonList, IonItem, IonButton, IonToggle, IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+import { IonCardHeader, IonCardContent, IonCard, IonCardTitle, IonInput, IonIcon, IonList, IonItem, IonButton, IonToggle, IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
 </script>
