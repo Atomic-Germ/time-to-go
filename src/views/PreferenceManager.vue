@@ -153,13 +153,13 @@
 </template>
 
 <script setup lang="ts">
-import { IonCardHeader, IonCardContent, IonCard, IonCardTitle, IonInput, IonIcon, IonList, IonItem, IonButton, IonToggle, IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+import { IonSelect, IonSelectOption, IonCardHeader, IonCardContent, IonCard, IonCardTitle, IonInput, IonIcon, IonList, IonLabel, IonItem, IonButton, IonToggle, IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
 </script>
 
 <script lang="ts">
 export default defineComponent({
-  components: { IonItem, IonList, IonInput, IonButton, IonToggle },
+  components: { IonItem, IonSelect, IonList, IonInput, IonButton, IonToggle },
 });
 </script>
