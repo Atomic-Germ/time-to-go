@@ -4,5 +4,6 @@
     "capacitor": {}
   },
   "type": "vue-vite",
-  "id": "4fc80f80"
+  "id": "4fc80f80",
+  "npmClient": "pnpm"
 }
