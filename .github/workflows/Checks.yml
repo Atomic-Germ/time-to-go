@@ -5,6 +5,7 @@ on:
       - main
       - ux/*
       - fix/*
+      - dev/*
   pull_request:
     branches:
       - main
@@ -28,6 +29,5 @@ jobs:
         env:
           OS: ${{ matrix.os }}
         run: |
-          npx cypress install
-          pnpm test:unit
-          pnpm test:e2e
+          pnpx cypress install
+          pnpm test
