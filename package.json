@@ -17,6 +17,7 @@
     "test:e2e": "npm-run-all -p -r dev test:cypress",
     "test:cypress": "cypress run",
     "test:unit": "vitest",
+    "test": "npm-run-all test:unit test:e2e",
     "lint": "eslint ."
   },
   "dependencies": {

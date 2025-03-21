@@ -10,11 +10,6 @@ describe('Tab Bar', () => {
     const wrapper = mount(MonthCalendar)
     expect(wrapper.text()).toMatch('Month Calendar')
   })
-  test('MonthCalendar should contain a button with id "punch-button"', () => {
-    const wrapper = mount(MonthCalendar)
-    const button = wrapper.find('#punch-button')
-    expect(button.exists()).toBe(true)
-  })
   test('It should open DayCalendar', () => {
     const wrapper = mount(DayCalendar)
     expect(wrapper.text()).toMatch('Day Calendar')
@@ -34,3 +29,28 @@ describe('Tab Bar', () => {
   })
 })
 
+describe('Month Calendar', () => {
+  test('It should contain a button with id "punch-button"', () => {
+    const wrapper = mount(MonthCalendar)
+    const button = wrapper.find('#punch-button')
+    expect(button.exists()).toBe(true)
+  })
+  test('It should have a back and forward toolbar', () => {
+    const wrapper = mount(MonthCalendar)
+    const topbar = wrapper.find('#top-bar')
+    expect(topbar.exists()).toBe(true)
+  })
+})
+
+describe('Day Calendar', () => {
+  test('It should contain a button with id "punch-button"', () => {
+    const wrapper = mount(DayCalendar)
+    const button = wrapper.find('#punch-button')
+    expect(button.exists()).toBe(true)
+  })
+  test('It should have a back and forward toolbar', () => {
+    const wrapper = mount(DayCalendar)
+    const topbar = wrapper.find('#top-bar')
+    expect(topbar.exists()).toBe(true)
+  })
+})

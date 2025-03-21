@@ -1,14 +1,14 @@
 <template>
   <ion-page>
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar id="top-bar">
                 <ion-buttons slot="start">
           <ion-button>
             <ion-icon src="/LeftArrow.svg"></ion-icon>
           </ion-button>
         </ion-buttons>
 
-        <ion-title>March 2025</ion-title>
+      <TopBar name="March" />
 
         <ion-buttons slot="end">
           <ion-button>
@@ -39,5 +39,6 @@ export default defineComponent({
 <script setup lang="ts">
 import { IonIcon, IonButtons, IonButton, IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import TopBar from '@/components/TopBar.vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
 </script>
