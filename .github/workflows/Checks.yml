@@ -2,15 +2,12 @@ name: Linting
 on:
   push:
     branches:
-      - main
       - ux/*
       - fix/*
       - dev/*
   pull_request:
     branches:
       - main
-      - ux
-      - fix
 jobs:
   'Checking':
     runs-on: ${{ matrix.os }}
