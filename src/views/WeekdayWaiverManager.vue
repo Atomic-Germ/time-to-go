@@ -12,12 +12,12 @@
         </ion-toolbar>
       </ion-header>
 
-      <ExploreContainer name="Weekday Waiver Manager page" />
+      <WeekdayWaiverManager name="Weekday Waiver Manager page" />
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import WeekdayWaiverManager from '@/components/WeekdayWaiverManager.vue';
 </script>

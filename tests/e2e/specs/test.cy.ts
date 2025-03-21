@@ -34,7 +34,7 @@ describe('Tapping the Weekday Waiver Manager icon', () => {
 describe('Tapping the Preference Manager icon', () => {
   it('opens the Preference Manager', () => {
     cy.visit('/tabs/tab4')
-    cy.contains('ion-content', 'Preference Manager')
+    cy.contains('ion-title', 'Preferences')
   })
   it('does not show the Punch In button', () => {
     cy.visit('/tabs/tab4')

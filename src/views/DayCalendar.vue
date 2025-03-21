@@ -24,7 +24,7 @@
         </ion-toolbar>
       </ion-header>
 
-      <ExploreContainer name="Day Calendar page" />
+      <DayCalendar name="Day Calendar page" />
     </ion-content>
     <ion-button id="punch-button">Punch In</ion-button>
   </ion-page>
@@ -40,5 +40,5 @@ export default defineComponent({
 import { IonIcon, IonButtons, IonButton, IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import TopBar from '@/components/TopBar.vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import DayCalendar from '@/components/DayCalendar.vue';
 </script>

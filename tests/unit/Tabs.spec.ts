@@ -25,7 +25,7 @@ describe('Tab Bar', () => {
   })
   test('It should open Preferences Manager', () => {
     const wrapper = mount(PreferenceManager)
-    expect(wrapper.text()).toMatch('Preference Manager')
+    expect(wrapper.text()).toMatch('Preferences')
   })
 })
 
