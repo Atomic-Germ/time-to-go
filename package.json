@@ -16,7 +16,7 @@
     "preview:android": "ionic cap open android --verbose",
     "test:e2e": "npm-run-all -p -r dev test:cypress",
     "test:cypress": "cypress run",
-    "test:unit": "vitest",
+    "test:unit": "vitest run",
     "test": "npm-run-all test:unit test:e2e",
     "lint": "eslint ."
   },
