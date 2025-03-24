@@ -1,6 +1,6 @@
 <template>
   <div id="container">
-    <ion-title>{{ name }}</ion-title>
+    <ion-title class="md">{{ name }}</ion-title>
   </div>
 </template>
 
@@ -8,6 +8,7 @@
 defineProps({
   name: String,
 });
+import { IonTitle } from '@ionic/vue';
 </script>
 
 <style scoped>

@@ -18,12 +18,6 @@
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Day Calendar</ion-title>
-        </ion-toolbar>
-      </ion-header>
-
       <DayCalendar name="Day Calendar page" />
     </ion-content>
     <ion-button id="punch-button">Punch In</ion-button>

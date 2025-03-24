@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "preinstall": "pnpm clean",
-    "clean": "pnpx rimraf ios android dist",
+    "clean": "pnpx rimraf ios android dist tests/e2e/screenshots/*",
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview:browser": "vite preview",
@@ -19,7 +19,8 @@
     "test:cypress": "cypress run",
     "test:unit": "vitest run",
     "test": "npm-run-all lint test:unit test:e2e",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "precommit": "pnpm test"
   },
   "dependencies": {
     "@capacitor/android": "^7.1.0",

@@ -52,7 +52,7 @@
           <ion-icon size="small" src="/stopwatch.svg" name="stopwatch-solid" aria-hidden="true" slot="start"></ion-icon>
           Snooze <ion-input slot="end"></ion-input>
         </ion-item>
-      </ion-list>
+      </ion-list> 
     </ion-card-content>
   </ion-card>
   <ion-card>
@@ -117,9 +117,7 @@
 </template>
 
 <script setup lang="ts">
-defineProps({
-  name: String,
-});
+import { IonCard, IonInput, IonCardContent, IonList, IonItem, IonToggle, IonCardHeader, IonCardSubtitle, IonSelect, IonSelectOption, IonLabel,    } from '@ionic/vue';
 </script>
 
 <style scoped>

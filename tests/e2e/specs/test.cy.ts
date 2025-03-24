@@ -1,7 +1,7 @@
 describe('Opening the App', () => {
   it('defaults to Month calendar', () => {
     cy.visit('/')
-    cy.contains('ion-content', 'Month Calendar')
+    cy.contains('ion-title', 'Month Calendar')
   })
   it('shows the Punch In button', () => {
     cy.visit('/tabs/tab1')
@@ -12,7 +12,7 @@ describe('Opening the App', () => {
 describe('Tapping Day Calendar icon', () => {
   it('opens the Day calendar', () => {
     cy.visit('/tabs/tab2')
-    cy.contains('ion-content', 'Day Calendar')
+    cy.contains('ion-title', 'Day Calendar')
   })
   it('shows the Punch In button', () => {
     cy.visit('/tabs/tab2')
@@ -23,7 +23,7 @@ describe('Tapping Day Calendar icon', () => {
 describe('Tapping the Weekday Waiver Manager icon', () => {
   it('opens the Weekly Waiver Manager', () => {
     cy.visit('/tabs/tab3')
-    cy.contains('ion-content', 'Weekday Waiver Manager')
+    cy.contains('ion-title', 'Weekday Waiver Manager')
   })
   it('does not show the Punch In button', () => {
     cy.visit('/tabs/tab3')

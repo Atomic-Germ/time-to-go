@@ -18,12 +18,6 @@
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Month Calendar</ion-title>
-        </ion-toolbar>
-      </ion-header>
-
       <MonthCalendar name="Month Calendar page" />
     </ion-content>
     <ion-button id="punch-button">Punch In</ion-button>
@@ -37,7 +31,7 @@ export default defineComponent({
 </script>
 
 <script setup lang="ts">
-import { IonIcon, IonButtons, IonButton, IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+import { IonPage, IonToolbar, IonButtons, IonButton, IonIcon, IonHeader, IonContent, IonTitle } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import TopBar from '@/components/TopBar.vue';
 import MonthCalendar from '@/components/MonthCalendar.vue';
