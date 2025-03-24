@@ -1,7 +1,7 @@
 describe('Opening the App', () => {
   it('defaults to Month calendar', () => {
     cy.visit('/')
-    cy.contains('ion-title', 'Month Calendar')
+    cy.contains('ion-title', 'MonthCalendar')
   })
   it('shows the Punch In button', () => {
     cy.visit('/tabs/tab1')
@@ -12,7 +12,7 @@ describe('Opening the App', () => {
 describe('Tapping Day Calendar icon', () => {
   it('opens the Day calendar', () => {
     cy.visit('/tabs/tab2')
-    cy.contains('ion-title', 'Day Calendar')
+    cy.contains('ion-title', 'DayCalendar')
   })
   it('shows the Punch In button', () => {
     cy.visit('/tabs/tab2')

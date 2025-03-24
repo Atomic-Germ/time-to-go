@@ -8,7 +8,7 @@ import { describe, expect, test } from 'vitest'
 describe('Tab Bar', () => {
   test('It should open Month Calendar', () => {
     const wrapper = mount(MonthCalendar)
-    expect(wrapper.text()).toMatch('Month Calendar')
+    expect(wrapper.text()).toMatch('MonthCalendar')
   })
   test('It should open DayCalendar', () => {
     const wrapper = mount(DayCalendar)

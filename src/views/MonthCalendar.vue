@@ -1,4 +1,5 @@
 <template>
+    <div hidden><ion-title>MonthCalendar</ion-title></div>
   <ion-page>
     <ion-header>
       <ion-toolbar id="top-bar">

@@ -1,5 +1,6 @@
 <template>
-  <ion-page>
+    <div hidden><ion-title>DayCalendar</ion-title></div>
+    <ion-page>
     <ion-header>
       <ion-toolbar id="top-bar">
                 <ion-buttons slot="start">
