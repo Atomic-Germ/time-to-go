@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
+    "preinstall": "pnpm clean",
     "clean": "pnpx rimraf ios android dist",
     "dev": "vite",
     "build": "vue-tsc && vite build",
@@ -11,13 +12,13 @@
     "prepare:cap:ios": "ionic capacitor add ios",
     "prepare:cap:android": "ionic capacitor add android",
     "prepare:cap": "capacitor sync",
-    "postinstall": "pnpm build && pnpm prepare:cap:android ; pnpm prepare:cap:ios ; pnpm prepare:cap",
-    "preview:ios": "ionic cap open ios --verbose",
-    "preview:android": "ionic cap open android --verbose",
+    "postinstall": "pnpm build ; npm-run-all prepare:cap:android prepare:cap:ios ; pnpm prepare:cap",
+    "preview:ios": "pnpm rebuild ; ionic cap open ios --verbose",
+    "preview:android": "pnpm rebuild ; ionic cap open android --verbose",
     "test:e2e": "npm-run-all -p -r dev test:cypress",
     "test:cypress": "cypress run",
     "test:unit": "vitest run",
-    "test": "npm-run-all test:unit test:e2e",
+    "test": "npm-run-all lint test:unit test:e2e",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -57,7 +58,7 @@
     "*.vue"
   ],
   "description": "An Ionic project",
-  "packageManager": "pnpm@10.6.3",
+  "packageManager": "pnpm@10.6.5",
   "pnpm": {
     "overrides": {
       "esbuild@<=0.24.2": ">=0.25.0",
