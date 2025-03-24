@@ -19,8 +19,7 @@
     "test:cypress": "cypress run",
     "test:unit": "vitest run",
     "test": "npm-run-all lint test:unit test:e2e",
-    "lint": "eslint .",
-    "precommit": "pnpm test"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@capacitor/android": "^7.1.0",

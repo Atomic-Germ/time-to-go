@@ -31,7 +31,7 @@ export default defineComponent({
 </script>
 
 <script setup lang="ts">
-import { IonIcon, IonButtons, IonButton, IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+import { IonIcon, IonButtons, IonButton, IonPage, IonHeader, IonToolbar, IonContent } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import TopBar from '@/components/TopBar.vue';
 import DayCalendar from '@/components/DayCalendar.vue';
